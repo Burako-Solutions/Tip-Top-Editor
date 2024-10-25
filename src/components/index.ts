@@ -1,3 +1,3 @@
-import TipTop from './TipTop';
+import TipTapEditor from './TipTapEditor';
 
-export { TipTop };
+export { TipTapEditor };

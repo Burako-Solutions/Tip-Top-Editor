@@ -1,10 +1,10 @@
-import { TipTop } from '@/components';
+import { TipTapEditor } from '@/components';
 
 const Home = () => {
   return (
     <div>
-      <h1>TipTop Editor</h1>
-      <TipTop />
+      <h1>TipTap Editor</h1>
+      <TipTapEditor />
     </div>
   );
 };

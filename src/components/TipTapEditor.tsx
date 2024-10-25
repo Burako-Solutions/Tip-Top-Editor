@@ -3,7 +3,7 @@
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 
-const Tiptap = () => {
+const TipTapEditor = () => {
   const editor = useEditor({
     extensions: [StarterKit],
     content: '<p>Hello World! 🌎️</p>',
@@ -12,4 +12,4 @@ const Tiptap = () => {
   return <EditorContent editor={editor} />;
 };
 
-export default Tiptap;
+export default TipTapEditor;

@@ -17,8 +17,9 @@ import {
   Upload,
   ListOrdered,
 } from 'lucide-react';
-import { Toggle } from '../ui/toggle';
 import { Editor } from '@tiptap/react';
+
+import { Toggle } from '@/components';
 
 interface ToolBarProps {
   editor: Editor | null;

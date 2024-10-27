@@ -1,9 +1,9 @@
 'use client';
-import RichTextEditor from '@/components/RichTextEditor';
-import { useForm, SubmitHandler } from 'react-hook-form';
+
 import * as z from 'zod';
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Button } from '@/components/ui/button';
+
 import {
   Form,
   FormControl,
@@ -11,7 +11,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
+  Button,
+  RichTextEditor,
+} from '@/components';
 
 function extractTextFromHTML(html: string): string {
   const parser = new DOMParser();

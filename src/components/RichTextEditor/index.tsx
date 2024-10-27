@@ -1,25 +1,24 @@
 'use client';
+
+import React from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import TextAlign from '@tiptap/extension-text-align';
-import ToolBar from './ToolBar';
 import Heading from '@tiptap/extension-heading';
 import Highlight from '@tiptap/extension-highlight';
 import Image from '@tiptap/extension-image';
 import BulletList from '@tiptap/extension-bullet-list';
 import OrderedList from '@tiptap/extension-ordered-list';
 import ImageResize from 'tiptap-extension-resize-image';
-import React from 'react';
+
+import ToolBar from './ToolBar';
 
 interface RichTextEditorProps {
   content: string;
   onChange: (value: string) => void;
 }
 
-export default function RichTextEditor({
-  content,
-  onChange,
-}: RichTextEditorProps) {
+export const RichTextEditor = ({ content, onChange }: RichTextEditorProps) => {
   const editor = useEditor({
     extensions: [
       StarterKit.configure(),
@@ -61,4 +60,4 @@ export default function RichTextEditor({
       <EditorContent editor={editor} />
     </div>
   );
-}
+};
